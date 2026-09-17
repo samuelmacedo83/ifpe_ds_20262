@@ -15,8 +15,8 @@ def download_data(
     """
 
     result = yf.download(
-        tickers = 'AAPL',
-        multi_level_index = False
+        tickers = tickers,
+        multi_level_index = multi_level_index
     ).reset_index()
 
     return result
